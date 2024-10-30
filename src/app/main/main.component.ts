@@ -5,11 +5,17 @@ import { IArticle } from '../dbObjects/blogObjects';
 import { ContentService } from '../content.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
+import { MarkdownModule } from 'ngx-markdown';	    // <-----
+
 const ComponentName = 'MainComponent';
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [MatCardModule, MatDividerModule],
+  imports: [
+    MatCardModule, 
+    MatDividerModule,
+    MarkdownModule,							                      // <-----
+  ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })

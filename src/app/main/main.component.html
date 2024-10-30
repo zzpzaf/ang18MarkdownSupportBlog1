@@ -8,7 +8,8 @@
   <mat-divider></mat-divider>
   <mat-card-content>  
     <!-- {{article.articleContent}} -->
-    <div [innerHTML]="safeHtmlContent"></div>   
+    <!-- <div [innerHTML]="safeHtmlContent"></div>    -->
+    <markdown [disableSanitizer]="true" [data]="article.articleContent"></markdown> 
   </mat-card-content>
 } @else if (pgNr > 0) {
   <mat-card-content>  
