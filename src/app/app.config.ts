@@ -16,7 +16,17 @@ export const appConfig: ApplicationConfig = {
     // provideMarkdown ({
     //   sanitize: SecurityContext.NONE
     // }),
-    provideMarkdown(),
+    provideMarkdown({
+      markedOptions: {
+        provide: MARKED_OPTIONS,
+        useValue: {
+          gfm: true,
+          breaks: false,
+          pedantic: false,
+        },
+      },
+    }),
+
                                        
   ],
 };

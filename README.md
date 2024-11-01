@@ -5,7 +5,7 @@
 
 ### A sample Angular project for adding Markdown functionality to your blog.
 
-<!-- ![repo-image-screen-shoot](/src/assets/images/repoimage.gif) -->
+![app image](src/assets/images/app.jpg)
 
 
 This repo is actually a sequel of the previous repo:
